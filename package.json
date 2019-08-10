@@ -1,0 +1,21 @@
+{
+    "name": "lti-tool-provider",
+    "version": "0.0.1",
+    "description": "Learning tools interoperability tools provider",
+    "scripts": {
+        "build": "tsc",
+        "watch": "tsc-watch",
+        "serve": "node build\\server",
+        "start": "yarn watch --onSuccess \"yarn serve\" --onFailure \"echo Compilation Failed\""
+    },
+    "dependencies": {
+        "@types/body-parser": "^1.17.0",
+        "@types/express": "^4.17.0",
+        "@types/node": "^12.7.1",
+        "body-parser": "^1.19.0",
+        "express": "^4.17.1",
+        "node": "^12.8.0",
+        "tsc-watch": "^2.4.0",
+        "typescript": "^3.5.3"
+    }
+}
